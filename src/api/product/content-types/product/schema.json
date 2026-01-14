@@ -33,12 +33,12 @@
     },
     "video": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "cover": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -46,7 +46,7 @@
     "wallpaper": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -54,12 +54,21 @@
     "gallery": {
       "type": "media",
       "multiple": true,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
     },
     "weight": {
+      "type": "integer",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "stock": {
       "type": "integer",
       "required": true
     }

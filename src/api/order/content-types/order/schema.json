@@ -11,11 +11,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "user": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "plugin::users-permissions.user"
-    },
     "totalPayment": {
       "type": "decimal",
       "required": true
@@ -31,6 +26,22 @@
     "products": {
       "type": "json",
       "required": true
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "Pedido creado",
+        "Pago confirmado",
+        "Preparando tu café",
+        "Enviado",
+        "Entregado",
+        "Cancelado"
+      ]
     }
   }
 }

@@ -73,6 +73,19 @@
     "lastName": {
       "type": "string",
       "required": true
+    },
+    "documentType": {
+      "type": "enumeration",
+      "enum": [
+        "CC",
+        "CE",
+        "PA",
+        "NIT",
+        "TI"
+      ]
+    },
+    "documentNumber": {
+      "type": "string"
     }
   }
 }
