@@ -71,6 +71,9 @@
     "stock": {
       "type": "integer",
       "required": true
+    },
+    "image": {
+      "type": "string"
     }
   }
 }
