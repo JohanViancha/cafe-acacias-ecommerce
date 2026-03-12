@@ -48,6 +48,7 @@ module.exports = createCoreController("api::order.order", () => ({
       products: products,
       totalPayment: Math.round(totalPayment),
       user: user,
+      state: "Pedido creado",
       idPayment: idPayment,
       addressShiping: address,
     };
